@@ -1,0 +1,11 @@
+set stick_color, black
+set ray_trace_mode, 1
+set ray_texture, 2
+set antialias, 3
+set ambient, 0.5
+set spec_count, 5
+set shininess, 50
+set specular, 1
+set reflect, .1
+ray 400,400
+png ./hbps.png

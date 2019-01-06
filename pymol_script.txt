@@ -1,0 +1,48 @@
+bg_color white
+remove solvent
+remove hydrogen
+extract oo, org
+create ar, resi 27+70+60+73
+create pp, resi 20-364
+preset.ball_and_stick("oo")
+preset.ball_and_stick("ar")
+set_bond stick_color, grey95, oo
+set_bond stick_transparency, 0.0, oo
+color grey50, oo and e. C
+set valence, 1, oo
+set stick_radius, .07
+set sphere_scale, .18
+set stick_quality, 50
+set sphere_quality, 4
+color gray50, elem C
+color red, elem O
+color slate, elem N
+color gray98, elem H
+sphere_scale, 0.19, elem C
+
+set cartoon_color, gray90
+set sphere_scale, .16, elem H
+set sphere_scale, 0.19, elem O
+set sphere_scale, 0.19, elem S
+set sphere_scale, 0.19, elem N
+set sphere_scale, 0.19, elem C
+
+set dash_color, black
+set label_size, 28
+set valence,0
+
+pseudoatom foo1,pos=[-20.0, -7.0, -3.0]
+label foo1, "BIPH"
+
+pseudoatom foo2, pos=[-20.0, -7.0, -4.0]
+label foo2, "C27"
+
+pseudoatom foo3, pos=[-20.0, -7.0, -5.0]
+label foo3, "H60"
+
+pseudoatom foo4, pos=[-20.0, -7.0, -6.0]
+label foo4, "R70"
+
+pseudoatom foo5, pos=[-20.0, 11.0, -7.0]
+label foo5, "G73"
+set cartoon_transparency, 0.6
